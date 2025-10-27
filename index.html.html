@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BaptistCoin | Mine. Stake. Believe.</title>
+  <style>
+    :root {
+      --primary: #d0f0ff;
+      --blue-dark: #0a1f3d;
+      --blue-mid: #1c3f6e;
+      --blue-light: #3a6fb0;
+      --accent: #ffffff;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, var(--blue-dark), var(--blue-mid), var(--blue-light));
+      color: var(--primary);
+    }
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .logo {
+      width: 300px;
+      height: auto;
+      object-fit: contain;
+      margin-bottom: 20px;
+      animation: glowPulse 2s infinite;
+      filter: drop-shadow(0 0 10px var(--primary));
+      border-radius: 50%;
+      background: none;
+      border: none;
+    }
+    header h1 {
+      font-size: 4em;
+      color: var(--primary);
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      background: rgba(10, 31, 61, 0.8);
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .button {
+      color: var(--accent);
+      background: rgba(255, 255, 255, 0.1);
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 15px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+    .button:hover {
+      color: var(--primary);
+      background: rgba(255, 255, 255, 0.2);
+      transform: scale(1.1);
+      text-shadow: 0 0 8px var(--primary), 0 0 12px var(--primary);
+      box-shadow: 0 0 15px var(--primary), 0 0 25px var(--primary);
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: var(--accent);
+    }
+    section p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: var(--primary);
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      padding: 30px;
+      margin-top: 30px;
+      box-shadow: 0 0 20px rgba(174, 228, 255, 0.2);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .cta {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .widget {
+      margin-top: 40px;
+      text-align: center;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      height: 413px;
+      border-radius: 10px;
+    }
+    footer {
+      background: rgba(10, 31, 61, 0.9);
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+    @keyframes glowPulse {
+      0% { box-shadow: 0 0 10px var(--primary); }
+      50% { box-shadow: 0 0 20px #89d4ff; }
+      100% { box-shadow: 0 0 10px var(--primary); }
+    }
+    @media (max-width: 768px) {
+      body {
+        background: linear-gradient(to bottom right, #1e3a5f, #3c5f8f, #5a8fc0);
+      }
+      header h1 { font-size: 2.5em; }
+      nav { flex-wrap: wrap; gap: 20px; }
+      .cta .button { font-size: 1.2em; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="Baptistcoin.png" alt="BaptistCoin Logo" class="logo" />
+    <h1>BAPTISTCOIN</h1>
+  </header>
+
+  <nav>
+    <a href="#about" class="button">About</a>
+    <a href="#mine" class="button">Mine</a>
+    <a href="#stake" class="button">Stake</a>
+    <a href="#buy" class="button">Buy</a>
+    <a href="#stats" class="button">Live Stats</a>
+    <a href="#whitepaper" class="button">Whitepaper</a>
+  </nav>
+
+  <section id="about">
+    <h2>About BaptistCoin</h2>
+    <p>BaptistCoin is a faith-driven cryptocurrency designed for transparency, fairness, and community empowerment. With a fixed supply of 21 million tokens and zero inflation, it’s built to last.</p>
+  </section>
+
+  <section id="mine">
+    <h2>Mine BaptistCoin</h2>
+    <div class="card">
+      <p>BaptistCoin currently supports <strong>ASIC mining</strong> using devices like Bitaxe and other SHA-256 compatible rigs.</p>
+      <p><em>Support for CPU and GPU mining is planned for future releases</em> — stay tuned as we expand accessibility for all believers.</p>
+    </div>
+  </section>
+
+  <section id="stake">
+    <h2>Stake & Earn</h2>
+    <div class="card">
+      <p>Stake your BPT to earn passive rewards and support the network. Coming soon.</p>
+    </div>
+  </section>
+
+  <section id="buy">
+    <h2>Buy BaptistCoin</h2>
+    <div class="card">
+      <p>Available on decentralized exchanges. Liquidity is locked. Trust is built in.</p>
+    </div>
+  </section>
+
+  <section id="stats">
+    <h2>Live Stats</h2>
+    <div class="widget">
+      <div style="height:433px; background-color: #FFFFFF; overflow:hidden; box-sizing: border-box; border: 1px solid #56667F; border-radius: 4px; text-align: right; line-height:14px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px 0 0 #56667F; padding: 0px; margin: 0px; width: 100%;">
+        <div style="height:413px; padding:0px; margin:0px; width: 100%;">
+          <iframe src="https://widget.coinlib.io/widget?type=chart&theme=dark&coin_id=859&pref_coin_id=1505" width="100%" height="413px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" style="border:0;margin:0;padding:0;"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="whitepaper">
+    <h2>Whitepaper</h2>
+    <div class="card">
+      <p>Read the full vision, tokenomics, and roadmap for BaptistCoin. <a href="whitepaper.pdf" class="button">Download PDF</a></p>
+    </div>
+  </section>
+
+  <div class="cta">
+    <a href="#buy" class="button">Join the Movement</a>
+  </div>
+
+  <footer>
+    &copy; 2025 BaptistCoin. Built for believers. Powered by Ethereum.
+  </footer>
+
+</body>
+</html>
